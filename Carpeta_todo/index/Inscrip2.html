@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onejob_sub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../Style/Inscrip2.css">
+</head>
+<body>
+
+    <div class="contenedor">
+    <h1>Foto de Perfil</h1>
+    <div class="fotoperf">
+        <div id="imagenPrevia">Agregar Imagen</div>
+    <form id="formSubirFoto" enctype="multipart/form-data">
+        <input type="file" accept="image/*" id="archivoFoto" name="foto"> 
+        <input type="submit" value="Subir Foto">
+    </form>
+    
+</div>
+    <script>
+        document.getElementById('formSubirFoto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const archivo = document.getElementById('archivoFoto').files[0];
+            if (archivo) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imagenPrevia = document.getElementById('imagenPrevia');
+                    imagenPrevia.innerHTML = `<img src="${e.target.result}" alt="Imagen de perfil">`;
+                };
+                reader.readAsDataURL(archivo);
+            }
+        });
+    </script>
+    <style>
+        img{width: 100px; height: 100px;}
+    </style>
+    <br>
+    <br>
+    <h1>Agrega Imagenes de tu trabajo</h1>
+    <div class="fotoperf">
+        <div id="imagenPrevia">Agregar Imagen</div>
+    <form id="formSubirFoto" enctype="multipart/form-data">
+        <input type="file" accept="image/*" id="archivoFoto" name="foto"> 
+        <input type="submit" value="Subir Foto">
+    </form>
+    
+</div>
+    <script>
+        document.getElementById('formSubirFoto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const archivo = document.getElementById('archivoFoto').files[0];
+            if (archivo) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imagenPrevia = document.getElementById('imagenPrevia');
+                    imagenPrevia.innerHTML = `<img src="${e.target.result}" alt="Imagen de perfil">`;
+                };
+                reader.readAsDataURL(archivo);
+            }
+        });
+    </script>
+    <br>
+    <br>
+    <h1>Agrega Reels de tu trabajo</h1>
+    <form id="formSubirVideo" enctype="multipart/form-data" action="procesar_video.php" method="post">
+        <input type="file" accept="video/*" id="archivoVideo" name="video">
+        <input type="submit" value="Subir Video">
+    </form>
+    <br>
+    <div class="container-fluid" style="display: flex;">
+        <a href="confpin.html" class="btn btn-warning btn-md" style="width: 250px; position: relative;">Cancelar</a>
+        
+        <a href="confpin.html" class="btn btn-warning btn-md" style="width: 250px; position: relative;">Confirmar</a>
+    </div>
+</div>
+</body>
+</html>

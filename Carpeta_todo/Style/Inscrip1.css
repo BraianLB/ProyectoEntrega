@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../Imagenes/fondo7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#MenuNav{
+    background-color: black;
+    color: white;
+}
+
+#MenuNav a{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    height: 80px;
+    text-align: center;
+}
+
+nav div a{
+    margin: 0% 50%;
+}
+
+.Inscripcion{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    
+    
+}
+
+.contenedor_todo{
+    display: flex;
+    flex-direction: row;
+}
+
+.Inscripcion{
+    width: 450px;
+    height: 500px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(44, 39, 29, 0.521);
+    color: white;
+}
+
+.Inscripcion form label{
+    margin-top: 10px;
+}
+
+.Inscripcion form input{
+    margin-top: 10px;
+} 
+
+.Inscripcion form a{
+    margin-top: 30px;
+} 

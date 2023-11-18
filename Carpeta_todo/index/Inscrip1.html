@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../Style/Inscrip1.css">
+
+
+    <title>OneJob_INICIO</title>
+</head>
+<body>
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid" id="MenuNav">
+          <a class="navbar-brand" href="home.html"><img src="../Imagenes/log.jpeg" alt="Logo Empresarial" height="80px" id="LogoNav"></a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegador" aria-controls="navegador" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon" style="background-color: white;">
+          </button>
+           -->
+        </div>
+      </nav>
+      <!-- Cuerpo -->
+      <main>
+        <!-- Inscripcion, ingreso de datos -->
+        <div class="contenedor_todo">
+
+        <div class="Inscripcion">
+            <form action="">    
+                    <select id="DocIdent" name="DocIdent">
+                    <option value="opcion1">Cedula de Ciudadania</option>
+                    <option value="opcion2">Cedula de Extranjeria</option>
+                    <option value="opcion3">Pasaporte</option>
+                    <option value="opcion3">Permiso especial</option>
+                    </select>
+                 <input type="number" name="" id="NumDocReg" placeholder="Numero de documento">
+                <label for="">Indicanos cual es tu Nacionalidad</label>
+                <input type="text" placeholder="Nacionalidad" id="NacioReg"> 
+                <label for="miLista">Dinos en que departamento resides</label>
+                <!-- Lista desplegable con departamentos JS -->
+                <select id="departamentos" name="departamentos">
+                  <option value=""></option>
+                </select>  
+                <!-- Lista desplegable con ciudades JS -->
+                <label for="ciudades">Selecciona una ciudad:</label> 
+                <select id="ciudades" name="ciudades">
+                  <option value="" disabled selected>Indica un departamento</option>
+                </select> 
+                <label for="miLista">¿En que aréa te desempeñaras?</label>
+                <!-- Lista desplegable con Area desempeño JS -->
+                <select id="areaecono" name="areaecono">
+                  <option value=""></option>
+                </select>  
+                <label for="miLista">¿Cuanto tiempo de experiencia tienes?</label>
+                <!-- Lista desplegable con Experiencia JS -->
+                <select id="timexpe" name="timexpe">
+                  <option value=""></option>
+                </select>
+                <label for="">¿Con qué usuario quieres que te identifiquen?</label>
+                <input type="text" placeholder="Usuario" id="NacioReg">
+                <a href="confpin.html" class="btn btn-warning btn-md" style="width: 250px;">Siguiente</a>
+            </form>
+          </div>
+          <div class="imagen">
+            <img src="../Imagenes/COLOMBIA_3.jfif" alt="Mi tierra" width="500px" height="500px" style="padding-right: 50px;">
+          </div>
+        </div>
+        <br>
+        <!-- Boton -->
+        <div class="container-fluid" style="margin-left: 40%;">
+            
+        </div>
+
+      </main>
+
+</body>
+<script src="../JS/Inscrip1.js"></script>
+</html>
