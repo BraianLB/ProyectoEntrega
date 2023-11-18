@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onejob_instructivo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Instructivo.css">
+</head>
+<body>
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid" id="MenuNav">
+          <a class="navbar-brand" href="#"><img src="Imagenes/log.jpeg" alt="Logo Empresarial" height="80px" id="LogoNav"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegador" aria-controls="navegador" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon" style="background-color: white;">
+          </button>
+          <div class="collapse navbar-collapse" id="navegador">
+            <form class="d-flex" role="search" id="search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                
+              </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7z"/>
+              </svg>
+              </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="4s0" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                  </svg>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Idioma</a></li>
+                  <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                  <li><a class="dropdown-item" href="#">Guardados</a></li>
+                  <li><a class="dropdown-item" href="#">Cerrar Seccion</a></li>
+                  
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                  </svg>
+                </a>
+              </li>
+
+             
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carrucel instrutivo -->
+      <div class="contenedor_todo">
+
+        <div class="contedor1">
+        <a href="#" class="btn btn-warning btn-md" style="width: 250px; height: 45px; margin-top: 15px;">Regresar</a>
+        <br>
+        <br>
+        <h2>Dejanos tu aponión</h2>
+        <br>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInputDisabled" placeholder="Usuario">
+          <label for="floatingInputDisabled">Usuario</label>
+        </div>
+       <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
+        <label for="floatingInputDisabled">Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"></textarea>
+        <label for="floatingTextareaDisabled">Comantario</label>
+        <br>
+        <a href="#" class="btn btn-primary btn-md" style="width: 250px; height: 45px;">Enviar</a>
+      </div>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/sJTKD4ED8b4?si=yexIzWWYUN5rTIsR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+              <h5>COMO HACER UN BUEN REEL PARTE 1</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/glj7OuQ9G0I?si=99o4uKtq4LbvEyG2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+              <h5>COMO HACER UN BUEN REEL PARTE 2</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/US6F9tKLg20?si=xxsY34A7V7Ooc_LP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+              <h5>COMO HACER UN BUEN REEL PARTE 3</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FoKMw-A8EBM?si=69Mvalc84Dvj_Qck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</body>
+</html>

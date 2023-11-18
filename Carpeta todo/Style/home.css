@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(Imagenes/fondo7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#MenuNav{
+    background-color: black;
+}
+
+#MenuNav a{
+    background-color: black;
+    color: white;
+}
+
+#portada{
+    display: flex; 
+    column-gap: 20px; 
+    padding: 20px; 
+    background-color: black; 
+    color: white;
+     width: 1000px; 
+     height: 100%; 
+     align-items: center; 
+     align-content: center;
+     background-image: url(Imagenes/fondo5.jpg);
+     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+iframe{
+    position: relative;
+    left: -180px;
+}
+
+/* main{
+    padding: 20px;
+    margin: auto;
+}
+ */
+.cajatodo_login{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative; /* Para que los objetos dentro, se posicionen con respecto a la posicion de él */  
+    
+}
+
+.caja_trasera{
+    width: 100%;
+    /* No ponemos el alto porque este es automatico y se va ajustando con los objetos */
+    padding: 10px 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    backdrop-filter: blur(10px);
+    background-color: saddlebrown;
+}
+
+.caja_trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 300ms;
+
+}
+
+.caja_trasera div p,
+.caja_trasera div button{
+    margin-top: 30px;
+}
+
+.caja_trasera div h2{
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.caja_trasera button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600; /* Para literal el ancho de los caracteres */
+    cursor: pointer; /* Para que el cursor se ponga como manito */
+    color: white;
+    outline: none; /* Para ocultar la linea negra que aparece en el bordo con el hover */
+    transition: all 300ms;
+}
+
+.caja_trasera button:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* Formularios */
+
+.cont_login-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -400px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.875, 0.320, 1.275) ;
+}
+
+.cont_login-registro form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+.cont_login-registro form h2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;   /* Con este separa mos el texto de los botones o inputs */
+    color: rgb(102, 77, 7);
+}
+
+.cont_login-registro form input{
+    width: 100%;
+    
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(172, 183, 194);
+    font-size: 16px;
+    outline: none; /* ocultar linea negra */
+}
+
+.cont_login-registro form button{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.formulario_inicio{
+    opacity: 1;
+    display: block;
+}
+
+.formulario_registro{
+    display: none;
+}
+
+/* EL RESPONSIVE DISIGN */
+
+@media screen and (max-width: 850px){   /* Cuando la pagina alcance este tamaño pasa algo */
+    main{
+        margin-top: 50px;
+    }
+
+    .caja_trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja_trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /* Formularios */
+    .cont_login-registro{
+        top:-10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .cont_login-registro form{
+        position: relative;
+    }
+
+}

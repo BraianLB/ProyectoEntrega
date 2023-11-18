@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(Imagenes/fondo7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formulario{
+    width: 500px; 
+    
+     margin: auto; 
+     display: flex;
+      align-items: center; 
+      align-content: center;
+      flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+#botones{
+   display: flex;
+   flex-direction: row;
+   row-gap: 20px;
+   align-content: center; 
+   width: 700px;
+   
+ 
+}
+
+#botones a{
+    margin: auto;
+}
+
+@media screen and (max-width: 850px){
+    #botones{
+        display: flex;
+        flex-direction: row;
+        row-gap: 10px;
+        align-content: center; 
+        width: 600px;
+        
+      
+     }
+ }
